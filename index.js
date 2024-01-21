@@ -72,10 +72,40 @@
 
 // merge 2 objects
 
-let data = { name: 'ahsan', age: 24, skill: '35' };
+// let data = { name: 'ahsan', age: 24, skill: '35' };
 
-let info = { city: 'isl', hobby: 'cricket' };
+// let info = { city: 'isl', hobby: 'cricket' };
 
-data = { ...data, ...info };
+// data = { ...data, ...info };
 
-console.warn(data);
+// console.warn(data);
+
+// 13
+
+// let data = { name: 'satti', age: 23, skill: '30' };
+// let info = { city: 'lahore', routine: 'jogging' };
+
+// data = { data, ...info };
+
+// console.warn(data);
+
+// 14
+
+// let data = { name: 'satti', age: 23, skill: '30' };
+// let info = { city: 'lahore', skill: 'stump' };
+
+// data = { ...data, ...info };
+
+// console.warn(data);
+
+// 15
+
+// const name = 'Anil';
+
+// console.warn(name());
+
+// 16
+
+// const result = false || {} || null;
+
+// console.warn(result);
