@@ -109,3 +109,18 @@
 // const result = false || {} || null;
 
 // console.warn(result);
+
+// 17
+
+// const result = null || false || '';
+
+// console.warn(result);
+
+// 18
+
+// const result = [] || 0 || true;
+// console.warn(result);
+
+// 19
+
+// console.warn(Promise.resolve(5));
