@@ -124,3 +124,53 @@
 // 19
 
 // console.warn(Promise.resolve(5));
+
+// 20
+
+// JSON.parse()
+
+// what this method will do
+
+// Parses JSON to a javascript value
+
+// 21
+
+// let name = 'satti';
+
+// function getName() {
+// 	console.log(name);
+// 	let name = 'ahsan';
+// }
+// getName();
+
+// 22
+
+// let name = 'cena';
+
+// function getName() {
+// 	console.log(name);
+// }
+// getName();
+
+// 23
+
+// console.log(`${(x => x)('I love')} to program`);
+
+// 24
+
+// function sumValues(x, y, z) {
+// 	return x + y + z;
+// }
+// console.warn(sumValues(...[1, 2, 3]));
+
+// In which method will be correct for output 6
+// A: sumValues([...1,2,3])
+// B: sumValues([...[1,2,3]])
+// C: sumValues(...[1,2,3])
+// D: sumValues([1,2,3] )
+
+// 25
+
+// const name = 'ahsan step by step';
+// console.log(!typeof name === 'object');
+// console.log(!typeof name === 'string');
