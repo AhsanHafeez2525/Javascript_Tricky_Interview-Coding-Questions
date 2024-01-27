@@ -205,15 +205,24 @@
 
 // eg 3 chain
 
+// let numbers = [1, 2, 3, 4, 5];
+// let result = numbers
+// 	.map(function (element) {
+// 		return element * element;
+// 	})
+// 	.filter(function (element) {
+// 		return element > 10;
+// 	})
+// 	.reduce(function (accumulator, element) {
+// 		return (accumulator += element);
+// 	});
+// console.log(result); //Output: 41
+
+// eg 4 short code of eg 3
+
 let numbers = [1, 2, 3, 4, 5];
 let result = numbers
-	.map(function (element) {
-		return element * element;
-	})
-	.filter(function (element) {
-		return element > 10;
-	})
-	.reduce(function (accumulator, element) {
-		return (accumulator += element);
-	});
-console.log(result); //Output: 41
+	.map(elem => elem * elem)
+	.filter(elem => elem > 10)
+	.reduce((accu, elem) => (accu += elem));
+console.log(result); //41
