@@ -174,3 +174,46 @@
 // const name = 'ahsan step by step';
 // console.log(!typeof name === 'object');
 // console.log(!typeof name === 'string');
+
+// 26
+
+// const name = 'Subscribe';
+// const age = 21;
+
+// console.log(isNaN(name));
+// console.log(isNaN(age));
+
+// map method
+
+// eg 1
+
+// const data = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// const result = data.map(item => item * 2);
+
+// console.log(result);
+
+// eg 2
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// let mapReturn = numbers.map(elem => elem * elem);
+// let forEachReturn = numbers.forEach(elem => elem * elem);
+
+// console.log(mapReturn); //output: [ 1, 4, 9, 16, 25 ]
+// console.log(forEachReturn); //output: undefined
+
+// eg 3 chain
+
+let numbers = [1, 2, 3, 4, 5];
+let result = numbers
+	.map(function (element) {
+		return element * element;
+	})
+	.filter(function (element) {
+		return element > 10;
+	})
+	.reduce(function (accumulator, element) {
+		return (accumulator += element);
+	});
+console.log(result); //Output: 41
