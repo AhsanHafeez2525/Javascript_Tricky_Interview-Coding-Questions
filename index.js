@@ -283,17 +283,48 @@
 
 // eg 2
 
-const arr = [2, 4, 5, 7, 8, 10, 13];
+// const arr = [2, 4, 5, 7, 8, 10, 13];
 
-function findMax(arr) {}
+// function findMax(arr) {}
 
-console.log(findMax(arr));
+// console.log(findMax(arr));
 
-const output = arr.reduce(function (max, curr) {
-	if (curr > max) {
-		max = curr;
-	}
-	return max;
-}, 0);
+// const output = arr.reduce(function (max, curr) {
+// 	if (curr > max) {
+// 		max = curr;
+// 	}
+// 	return max;
+// }, 0);
+
+// console.log(output);
+
+// tricky array
+
+const users = [
+	{
+		firstName: 'ahsan',
+		lastName: 'Satti',
+		age: 26,
+	},
+	{
+		firstName: 'mohsin',
+		lastName: 'ejaz',
+		age: 26,
+	},
+	{
+		firstName: 'sayam',
+		lastName: 'ahmed',
+		age: 26,
+	},
+	{
+		firstName: 'rizwan',
+		lastName: 'riaz',
+		age: 26,
+	},
+];
+
+// list of full names ?
+
+const output = users.map(x => x.firstName + ' ' + x.lastName);
 
 console.log(output);
