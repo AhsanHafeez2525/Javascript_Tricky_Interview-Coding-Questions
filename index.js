@@ -270,11 +270,30 @@
 
 // reduce
 
+// eg 1
+
+// const arr = [2, 4, 5, 7, 8, 10, 13];
+
+// const output = arr.reduce(function (acc, curr) {
+// 	acc = acc + curr;
+// 	return acc;
+// }, 0);
+
+// console.log(output);
+
+// eg 2
+
 const arr = [2, 4, 5, 7, 8, 10, 13];
 
-const output = arr.reduce(function (acc, curr) {
-	acc = acc + curr;
-	return acc;
+function findMax(arr) {}
+
+console.log(findMax(arr));
+
+const output = arr.reduce(function (max, curr) {
+	if (curr > max) {
+		max = curr;
+	}
+	return max;
 }, 0);
 
 console.log(output);
