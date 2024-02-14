@@ -220,9 +220,50 @@
 
 // eg 4 short code of eg 3
 
-let numbers = [1, 2, 3, 4, 5];
-let result = numbers
-	.map(elem => elem * elem)
-	.filter(elem => elem > 10)
-	.reduce((accu, elem) => (accu += elem));
-console.log(result); //41
+// let numbers = [1, 2, 3, 4, 5];
+// let result = numbers
+// 	.map(elem => elem * elem)
+// 	.filter(elem => elem > 10)
+// 	.reduce((accu, elem) => (accu += elem));
+// console.log(result); //41
+
+// eg 5 map
+
+// const arr = [2, 3, 4, 5, 6, 7, 8];
+
+// function double(x) {
+// 	return x * 2;
+// }
+
+// function triple(x) {
+// 	return x * 3;
+// }
+
+// const output = arr.map(double);
+// const output = arr.map(triple);
+// const output = arr.map(function binary(x) {
+// 	return x.toString(2);
+// });
+// console.log(output);
+
+// filter
+
+const arr = [2, 4, 5, 7, 8, 10, 13];
+
+const isOdd = x => {
+	return x % 2;
+};
+const isEven = x => {
+	return x % 2 === 0;
+};
+
+const greaterFour = x => {
+	return x > 4;
+};
+
+const output = arr.filter(isOdd);
+const output1 = arr.filter(isEven);
+const output2 = arr.filter(greaterFour);
+console.log(output);
+console.log(output1);
+console.log(output2);
