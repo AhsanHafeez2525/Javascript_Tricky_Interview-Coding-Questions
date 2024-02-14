@@ -248,22 +248,33 @@
 
 // filter
 
+// const arr = [2, 4, 5, 7, 8, 10, 13];
+
+// const isOdd = x => {
+// 	return x % 2;
+// };
+// const isEven = x => {
+// 	return x % 2 === 0;
+// };
+
+// const greaterFour = x => {
+// 	return x > 4;
+// };
+
+// const output = arr.filter(isOdd);
+// const output1 = arr.filter(isEven);
+// const output2 = arr.filter(greaterFour);
+// console.log(output);
+// console.log(output1);
+// console.log(output2);
+
+// reduce
+
 const arr = [2, 4, 5, 7, 8, 10, 13];
 
-const isOdd = x => {
-	return x % 2;
-};
-const isEven = x => {
-	return x % 2 === 0;
-};
+const output = arr.reduce(function (acc, curr) {
+	acc = acc + curr;
+	return acc;
+}, 0);
 
-const greaterFour = x => {
-	return x > 4;
-};
-
-const output = arr.filter(isOdd);
-const output1 = arr.filter(isEven);
-const output2 = arr.filter(greaterFour);
 console.log(output);
-console.log(output1);
-console.log(output2);
