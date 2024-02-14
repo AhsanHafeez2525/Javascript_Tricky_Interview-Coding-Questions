@@ -331,13 +331,32 @@ const users = [
 
 // find unique and same age?
 
+// const output = users.reduce(function (acc, curr) {
+// 	if (acc[curr.age]) {
+// 		acc[curr.age] = ++acc[curr.age];
+// 	} else {
+// 		acc[curr.age] = 1;
+// 	}
+// 	return acc;
+// }, {});
+
+// console.log(output);
+
+// first name of all the people who's age is less than 30
+
+// 1 method
+
+// const output = users.filter(x => x.age < 30).map(x => x.firstName);
+
+// console.log(output);
+
+// 2 method
+
 const output = users.reduce(function (acc, curr) {
-	if (acc[curr.age]) {
-		acc[curr.age] = ++acc[curr.age];
-	} else {
-		acc[curr.age] = 1;
+	if (curr.age < 30) {
+		acc.push(curr.firstName);
 	}
 	return acc;
-}, {});
+}, []);
 
 console.log(output);
