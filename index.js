@@ -309,12 +309,12 @@ const users = [
 	{
 		firstName: 'mohsin',
 		lastName: 'ejaz',
-		age: 26,
+		age: 75,
 	},
 	{
 		firstName: 'sayam',
 		lastName: 'ahmed',
-		age: 26,
+		age: 50,
 	},
 	{
 		firstName: 'rizwan',
@@ -325,6 +325,19 @@ const users = [
 
 // list of full names ?
 
-const output = users.map(x => x.firstName + ' ' + x.lastName);
+// const output = users.map(x => x.firstName + ' ' + x.lastName);
+
+// console.log(output);
+
+// find unique and same age?
+
+const output = users.reduce(function (acc, curr) {
+	if (acc[curr.age]) {
+		acc[curr.age] = ++acc[curr.age];
+	} else {
+		acc[curr.age] = 1;
+	}
+	return acc;
+}, {});
 
 console.log(output);
