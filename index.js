@@ -352,11 +352,25 @@ const users = [
 
 // 2 method
 
-const output = users.reduce(function (acc, curr) {
-	if (curr.age < 30) {
-		acc.push(curr.firstName);
-	}
-	return acc;
-}, []);
+// const output = users.reduce(function (acc, curr) {
+// 	if (curr.age < 30) {
+// 		acc.push(curr.firstName);
+// 	}
+// 	return acc;
+// }, []);
 
-console.log(output);
+// console.log(output);
+
+// block scope
+
+{
+	var a = 10;
+	let b = 20;
+	const c = 30;
+	console.log(a);
+	console.log(b);
+	console.log(c);
+}
+console.log(a);
+console.log(b);
+console.log(c);
