@@ -377,9 +377,51 @@ const users = [
 
 // problem using var
 
-var a = 50;
+// var a = 50;
+
+// if (true) {
+// 	var a = 70;
+// }
+// console.log(a);
+
+// nested scope
+
+function one() {
+	const username = 'hitesh';
+
+	function two() {
+		const website = 'youtube';
+		console.log(username);
+	}
+	// console.log(website);
+
+	two();
+}
+
+// one()
 
 if (true) {
-	var a = 70;
+	const username = 'hitesh';
+	if (username === 'hitesh') {
+		const website = ' youtube';
+		// console.log(username + website);
+	}
+	// console.log(website);
 }
-console.log(a);
+
+// console.log(username);
+
+// ++++++++++++++++++ interesting ++++++++++++++++++
+
+// hositing
+
+console.log(addone(5));
+
+function addone(num) {
+	return num + 1;
+}
+
+addTwo(5);
+const addTwo = function (num) {
+	return num + 2;
+};
