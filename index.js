@@ -363,14 +363,23 @@ const users = [
 
 // block scope
 
-{
-	var a = 10;
-	let b = 20;
-	const c = 30;
-	console.log(a);
-	console.log(b);
-	console.log(c);
+// {
+// 	var a = 10;
+// 	let b = 20;
+// 	const c = 30;
+// 	console.log(a);
+// 	console.log(b);
+// 	console.log(c);
+// }
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+// problem using var
+
+var a = 50;
+
+if (true) {
+	var a = 70;
 }
 console.log(a);
-console.log(b);
-console.log(c);
