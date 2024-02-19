@@ -428,12 +428,31 @@ if (true) {
 
 // closures
 
+// function outer() {
+// 	let userName = 'ahsan Satti';
+// 	function inner() {
+// 		console.log('inner function', userName);
+// 	}
+// 	inner();
+// }
+// outer();
+// console.log('outer ', outer);
+
+// closures part 2
+
 function outer() {
-	let userName = 'ahsan Satti';
+	let username = 'hitesh';
+	console.log('OUTER', secret);
 	function inner() {
-		console.log('inner function', userName);
+		let secret = 'my123';
+		console.log('inner', username);
+	}
+	function innerTwo() {
+		console.log('innerTwo', username);
+		console.log(secret);
 	}
 	inner();
+	innerTwo();
 }
 outer();
-console.log('outer ', outer);
+console.log('TOO OUTER', username);
