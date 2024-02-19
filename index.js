@@ -415,13 +415,25 @@ if (true) {
 
 // hositing
 
-console.log(addone(5));
+// console.log(addone(5));
 
-function addone(num) {
-	return num + 1;
+// function addone(num) {
+// 	return num + 1;
+// }
+
+// addTwo(5);
+// const addTwo = function (num) {
+// 	return num + 2;
+// };
+
+// closures
+
+function outer() {
+	let userName = 'ahsan Satti';
+	function inner() {
+		console.log('inner function', userName);
+	}
+	inner();
 }
-
-addTwo(5);
-const addTwo = function (num) {
-	return num + 2;
-};
+outer();
+console.log('outer ', outer);
