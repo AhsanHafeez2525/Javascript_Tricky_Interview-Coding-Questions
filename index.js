@@ -440,6 +440,37 @@ if (true) {
 
 // closures part 2
 
+// function outer() {
+// 	let username = 'hitesh';
+// 	console.log('OUTER', secret);
+// 	function inner() {
+// 		let secret = 'my123';
+// 		console.log('inner', username);
+// 	}
+// 	function innerTwo() {
+// 		console.log('innerTwo', username);
+// 		console.log(secret);
+// 	}
+// 	inner();
+// 	innerTwo();
+// }
+// outer();
+// console.log('TOO OUTER', username);
+
+// setTimeout + closures
+
+function x() {
+	var i = 2;
+
+	setTimeout(function () {
+		console.log(i);
+	}, 3000);
+	console.log('not wait js');
+}
+x();
+
+// closures part 2 again
+
 function outer() {
 	let username = 'hitesh';
 	console.log('OUTER', secret);
